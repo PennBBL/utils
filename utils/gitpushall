@@ -1,0 +1,34 @@
+#!/bin/bash
+#
+# Push all changes to git
+# git add -A / commit -m / push
+#
+# Copyright egenn@upenn.edu
+
+message(){
+        c=$1
+        shift
+        Message=$@
+        printf "\n\e[${c}m$Message\n\e[m"
+}
+
+commitMessage=$@
+[ -z $1 ] && commitMessage='wip'
+message 32 "$(date)\n: : : Running $0 on $MACHTYPE\n: : : Hello, \e[36;1m$USER"
+message 32 "> > > git status"
+# little trick to output to variable as well as stdout
+# though color is lost (can fix in git globals if you really want to)
+exec 9>&1
+status=$(git status | tee /dev/fd/9)
+commit=$(echo $status|grep "Nothing to commit")
+[ x"$commit" != "x" ] && message 32 "Nothing to commit; exiting." && exit 0
+message 32 "> > > git add -A"
+git add -A
+message 32 "> > > git commit -m \"$commitMessage\""
+git commit -m "$commitMessage"
+message 32 "> > > git push"
+git push
+message 32 "> > > git status"
+git status
+message 32 ": : : exit code: $?"
+exit $?
