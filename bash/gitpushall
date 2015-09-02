@@ -3,7 +3,7 @@
 # Push all changes to git
 # git add -A / commit -m / push
 #
-# Copyright egenn@upenn.edu
+# 2015 egenn@upenn.edu
 
 message(){
         c=$1
