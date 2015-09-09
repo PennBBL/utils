@@ -1,4 +1,4 @@
-# BBLutils
+# utils
 Demonstration repository
 
 Hello
