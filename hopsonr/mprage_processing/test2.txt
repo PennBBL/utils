@@ -1,0 +1,465 @@
+hopsonr@leonardo:mprage_processing% /import/monstrum/Applications/statapps/ANTs/bin/antsRegistration -d 3 -u 1 -w [0.025,0.975] -o /import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testBrainExtractionPrior -r /import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testBrainExtractionInitialAffine.mat -z 1 --float 0 -m MI[/import/monstrum/Applications/fsl5/data/standard/MNI152_T1_1mm.nii.gz,/import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testN4Corrected0.nii.gz,1,32,Regular,0.25] -c [1000x500x250x100,1e-8,10] -t Rigid[0.1] -f 8x4x2x1 -s 4x2x1x0 -m MI[/import/monstrum/Applications/fsl5/data/standard/MNI152_T1_1mm.nii.gz,/import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testN4Corrected0.nii.gz,1,32,Regular,0.25] -c [1000x500x250x100,1e-8,10] -t Affine[0.1] -f 8x4x2x1 -s 4x2x1x0 -m CC[/import/monstrum/Applications/fsl5/data/standard/MNI152_T1_1mm.nii.gz,/import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testN4Corrected0.nii.gz,0.5,4] -m CC[/import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testBrainExtractionTemplateLaplacian.nii.gz,/import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testBrainExtractionLaplacian.nii.gz,0.5,4] -c [50x10x0,1e-9,15] -t SyN[0.1,3,0] -f 4x2x1 -s 2x1x0
+Using double precision for computations.
+=============================================================================
+The composite transform comprises the following transforms (in order): 
+  1. /import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testBrainExtractionInitialAffine.mat (type = AffineTransform)
+=============================================================================
+  number of levels = 1
+  number of levels = 1
+  number of levels = 1
+  fixed image: /import/monstrum/Applications/fsl5/data/standard/MNI152_T1_1mm.nii.gz
+  moving image: /import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testN4Corrected0.nii.gz
+  fixed image: /import/monstrum/Applications/fsl5/data/standard/MNI152_T1_1mm.nii.gz
+  moving image: /import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testN4Corrected0.nii.gz
+  fixed image: /import/monstrum/Applications/fsl5/data/standard/MNI152_T1_1mm.nii.gz
+  moving image: /import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testN4Corrected0.nii.gz
+  fixed image: /import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testBrainExtractionTemplateLaplacian.nii.gz
+  moving image: /import/monstrum/ptsd_dm/subjects/DecisionMaking/DM001/T1//T1_scan1_BET/antsBET_testBrainExtractionLaplacian.nii.gz
+Dimension = 3
+Number of stages = 3
+Use Histogram Matching true
+Winsorize image intensities true
+Lower quantile = 0
+Upper quantile = 1
+Stage 1 State
+   Image metric = Mattes
+     Fixed image = Image (0x1d20dca0)
+  RTTI typeinfo:   itk::Image<double, 3u>
+  Reference Count: 2
+  Modified Time: 1343
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 1167
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [182, 218, 182]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [182, 218, 182]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [182, 218, 182]
+  Spacing: [1, 1, 1]
+  Origin: [-90, 126, -72]
+  Direction: 
+1 0 0
+0 -1 0
+0 0 1
+
+  IndexToPointMatrix: 
+1 0 0
+0 -1 0
+0 0 1
+
+  PointToIndexMatrix: 
+1 0 0
+0 -1 0
+0 0 1
+
+  Inverse Direction: 
+1 0 0
+0 -1 0
+0 0 1
+
+  PixelContainer: 
+    ImportImageContainer (0x1d21f0d0)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, double>
+      Reference Count: 1
+      Modified Time: 1164
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x2b60778bb010
+      Container manages memory: true
+      Size: 7221032
+      Capacity: 7221032
+
+     Moving image = Image (0x1d226da0)
+  RTTI typeinfo:   itk::Image<double, 3u>
+  Reference Count: 2
+  Modified Time: 1344
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 1341
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [256, 256, 176]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [256, 256, 176]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [256, 256, 176]
+  Spacing: [1, 1, 1]
+  Origin: [84.4167, -154.777, -152.257]
+  Direction: 
+-0 0 -1
+1 -0 0
+0 1 -0
+
+  IndexToPointMatrix: 
+0 0 -1
+1 0 0
+0 1 0
+
+  PointToIndexMatrix: 
+0 1 0
+0 0 1
+-1 0 0
+
+  Inverse Direction: 
+0 1 0
+0 0 1
+-1 0 0
+
+  PixelContainer: 
+    ImportImageContainer (0x1d20dff0)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, double>
+      Reference Count: 1
+      Modified Time: 1338
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x2b607afd3010
+      Container manages memory: true
+      Size: 11534336
+      Capacity: 11534336
+
+     Weighting = 1
+     Sampling strategy = regular
+     Number of bins = 32
+     Radius = 4
+     Sampling percentage  = 0.25
+   Transform = Rigid
+     Gradient step = 0.1
+     Update field sigma (voxel space) = 0
+     Total field sigma (voxel space) = 0
+     Update field time sigma = 0
+     Total field time sigma  = 0
+     Number of time indices = 0
+     Number of time point samples = 0
+Stage 2 State
+   Image metric = Mattes
+     Fixed image = Image (0x1d228c80)
+  RTTI typeinfo:   itk::Image<double, 3u>
+  Reference Count: 2
+  Modified Time: 1693
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 1517
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [182, 218, 182]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [182, 218, 182]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [182, 218, 182]
+  Spacing: [1, 1, 1]
+  Origin: [-90, 126, -72]
+  Direction: 
+1 0 0
+0 -1 0
+0 0 1
+
+  IndexToPointMatrix: 
+1 0 0
+0 -1 0
+0 0 1
+
+  PointToIndexMatrix: 
+1 0 0
+0 -1 0
+0 0 1
+
+  Inverse Direction: 
+1 0 0
+0 -1 0
+0 0 1
+
+  PixelContainer: 
+    ImportImageContainer (0x1d2246a0)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, double>
+      Reference Count: 1
+      Modified Time: 1514
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x2b60807d4010
+      Container manages memory: true
+      Size: 7221032
+      Capacity: 7221032
+
+     Moving image = Image (0x1d22adb0)
+  RTTI typeinfo:   itk::Image<double, 3u>
+  Reference Count: 2
+  Modified Time: 1694
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 1691
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [256, 256, 176]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [256, 256, 176]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [256, 256, 176]
+  Spacing: [1, 1, 1]
+  Origin: [84.4167, -154.777, -152.257]
+  Direction: 
+-0 0 -1
+1 -0 0
+0 1 -0
+
+  IndexToPointMatrix: 
+0 0 -1
+1 0 0
+0 1 0
+
+  PointToIndexMatrix: 
+0 1 0
+0 0 1
+-1 0 0
+
+  Inverse Direction: 
+0 1 0
+0 0 1
+-1 0 0
+
+  PixelContainer: 
+    ImportImageContainer (0x1d227100)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, double>
+      Reference Count: 1
+      Modified Time: 1688
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x2b6083eec010
+      Container manages memory: true
+      Size: 11534336
+      Capacity: 11534336
+
+     Weighting = 1
+     Sampling strategy = regular
+     Number of bins = 32
+     Radius = 4
+     Sampling percentage  = 0.25
+   Transform = Affine
+     Gradient step = 0.1
+     Update field sigma (voxel space) = 0
+     Total field sigma (voxel space) = 0
+     Update field time sigma = 0
+     Total field time sigma  = 0
+     Number of time indices = 0
+     Number of time point samples = 0
+Stage 3 State
+   Image metric = CC
+     Fixed image = Image (0x1d22e060)
+  RTTI typeinfo:   itk::Image<double, 3u>
+  Reference Count: 2
+  Modified Time: 2043
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 1867
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [182, 218, 182]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [182, 218, 182]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [182, 218, 182]
+  Spacing: [1, 1, 1]
+  Origin: [-90, 126, -72]
+  Direction: 
+1 0 0
+0 -1 0
+0 0 1
+
+  IndexToPointMatrix: 
+1 0 0
+0 -1 0
+0 0 1
+
+  PointToIndexMatrix: 
+1 0 0
+0 -1 0
+0 0 1
+
+  Inverse Direction: 
+1 0 0
+0 -1 0
+0 0 1
+
+  PixelContainer: 
+    ImportImageContainer (0x1d224ad0)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, double>
+      Reference Count: 1
+      Modified Time: 1864
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x2b60896ed010
+      Container manages memory: true
+      Size: 7221032
+      Capacity: 7221032
+
+     Moving image = Image (0x1d234800)
+  RTTI typeinfo:   itk::Image<double, 3u>
+  Reference Count: 2
+  Modified Time: 2044
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 2041
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [256, 256, 176]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [256, 256, 176]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [256, 256, 176]
+  Spacing: [1, 1, 1]
+  Origin: [84.4167, -154.777, -152.257]
+  Direction: 
+-0 0 -1
+1 -0 0
+0 1 -0
+
+  IndexToPointMatrix: 
+0 0 -1
+1 0 0
+0 1 0
+
+  PointToIndexMatrix: 
+0 1 0
+0 0 1
+-1 0 0
+
+  Inverse Direction: 
+0 1 0
+0 0 1
+-1 0 0
+
+  PixelContainer: 
+    ImportImageContainer (0x1d232040)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, double>
+      Reference Count: 1
+      Modified Time: 2038
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x2b608ce05010
+      Container manages memory: true
+      Size: 11534336
+      Capacity: 11534336
+
+     Weighting = 0.5
+     Sampling strategy = none
+     Number of bins = 32
+     Radius = 4
+     Sampling percentage  = 1
+   Transform = SyN
+     Gradient step = 0.1
+     Update field sigma (voxel space) = 3
+     Total field sigma (voxel space) = 0
+     Update field time sigma = 0
+     Total field time sigma  = 0
+     Number of time indices = 0
+     Number of time point samples = 0
+Registration using 3 total stages.
+
+Stage 0
+  iterations = 0
+  convergence threshold = 1e-06
+  convergence window size = 10
+  number of levels = 1
+
+
+
+ERROR:  The number of shrink factors does not match the number of levels.
+Shrink Factors: 4
+Number Of Levels: 1

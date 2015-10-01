@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+Part of FSL (build 501)
+flameo
+
+Usage: 
+ flameo --cope=filtered_func_data --mask=mask --dm=design.mat --tc=design.con --cs=design.grp --runmode=ols
+ flameo --cope=filtered_func_data --varcope=var_filtered_func_data --mask=mask --dm=design.mat --tc=design.con --cs=design.grp --runmode=flame1
+
+Compulsory arguments (You MUST set one or more of):
+	--cope,--copefile	cope regressor data file
+	--mask,--maskfile	mask file
+	--dm,--designfile	design matrix file
+	--tc,--tcf,--tcontrastsfile	file containing an ASCII matrix specifying the t contrasts
+	--cs,--csf,--covsplitfile	file containing an ASCII matrix specifying the groups the covariance is split into
+	--runmode	Inference to perform: runmode=fe (fixed effects), runmode=ols (mixed effects - OLS), runmode=flame1 (mixed effects - FLAME stage 1), runmode=flame12 (mixed effects - FLAME stage 1+2)
+
+Optional arguments (You may optionally specify one or more of):
+	-v,-V,--verbose	switch on diagnostic messages
+	--debug,--debuglevel	set debug level
+	--to,--timingon	turn timing on
+	-h,--help	display this message
+	--vc,--vcope,--varcope,--varcopefile	varcope weightings data file
+	--dvc,--dvcope,--dofvarcope,--dofvarcopefile	DOF data file for the varcope data
+	--fc,--fcf,--fcontrastsfile	file containing an ASCII matrix specifying the f contrasts
+	--ld,--logdir	log directory
+	--nj,--njumps	Num of jumps to be made by MCMC
+	--bi,--burnin	Num of jumps at start of MCMC to be discarded
+	--se,--sampleevery	Num of jumps for each sample
+	--zlt	Absolute value of lower threshold on FLAME stage 1 z-stats, used to see which voxels are passed to FLAME stage 2
+	--zut	Absolute value of upper threshold on FLAME stage 1 z-stats, used to see which voxels are passed to FLAME stage 2
+	--fm,--fixmean	Fix mean for tfit
+	--io,--inferoutliers	Infer outliers -- note that does not apply to fixed effects
+	--npo,--nopeoutput	Do not output PE files
+	--seed	seed for pseudo random number generator
+	--voxelwise_ev_numbers,--ven	List of numbers indicating voxelwise EVs position in the design matrix (list corresponds in order to files in voxelwise_ev_filenames)
+	--voxelwise_ev_filenames,--vef	List of 4D niftii files containing voxelwise EVs (list corresponds in order to numbers in voxelwise_ev_numbers)
+	--sdof,--sigma_dofs	sigma (in mm) to use for Gaussian smoothing the DOFs in FLAME 2. Default is 1mm, -1 indicates no smoothing
+	--so	
+	--ioni	Number of max iterations to use when inferring outliers. Default is 12.
+	--outputdof	output dof for lower-level compatibility usage
+
+
+
+
+
+An exception has been thrown
+Not all of the compulsory arguments have been provided
