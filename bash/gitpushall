@@ -13,7 +13,7 @@ message(){
 }
 
 commitMessage=$@
-[ -z $1 ] && commitMessage='wip'
+[ $# -eq 0 ] && commitMessage='wip'
 message 32 "$(date)\n: : : Running $0 on $MACHTYPE\n: : : Hello, \e[36;1m$USER"
 message 32 "> > > git status"
 # little trick to output to variable as well as stdout
