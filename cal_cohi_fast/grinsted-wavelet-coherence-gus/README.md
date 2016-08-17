@@ -1,5 +1,21 @@
 
+# Added files to the Cross wavelet and wavelet coherence toolbox for MATLAB
 
+####wtcMatrix.m                  : 
+faster version of computing coherence matrix only
+####cohi_mat_fast.sh             : 
+bash call to the wtcMatrix.m function
+####run_timeSeries2mat.m         : 
+use the original wtc.m to compute the pairwise coherence matrix
+####run_timeSeries2matFastCohi.m : 
+use the wtcMatrix.m to compute the coherence matrix in a faster mode
+
+
+
+
+---------------------------------------------------------------------------------
+The followings are the README.md from the original wavelet coherence toolbox
+---------------------------------------------------------------------------------
 # Cross wavelet and wavelet coherence toolbox for MATLAB
 
 *Aslak Grinsted, John Moore and Svetlana Jevrejeva*
