@@ -4,7 +4,8 @@
 ####wtcMatrix.m                  : 
 faster version of computing coherence matrix only
 ####cohi_mat_fast.sh             : 
-bash call to the wtcMatrix.m function
+bash call to the wtcMatrix.m function  
+example: ./cohi_mat_fast.sh data.mat result.mat 2 0.06 0.10
 ####run_timeSeries2mat.m         : 
 use the original wtc.m to compute the pairwise coherence matrix
 ####run_timeSeries2matFastCohi.m : 
