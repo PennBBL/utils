@@ -14,8 +14,10 @@ use the wtcMatrix.m to compute the coherence matrix in a faster mode
 
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
-The followings are the README.md from the original wavelet coherence toolbox
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+
+The followings are the README.md from the original wavelet coherence toolbox
+
 # Cross wavelet and wavelet coherence toolbox for MATLAB
 
 *Aslak Grinsted, John Moore and Svetlana Jevrejeva*
