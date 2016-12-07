@@ -1,0 +1,8 @@
+#!/bin/bash
+# AFGR December 7th 2016
+# This file can be used to filter a branch
+# The only required input is the path to the file within the git repo
+# gitFilter </path/to/your/file>
+
+
+git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch ${1}' --prune-empty --tag-name-filter cat -- --all
